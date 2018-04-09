@@ -1,6 +1,6 @@
 {{#if mustFallback}}
   <select onchange={{action "handleChange"}}>
-    <option value="" selected={{not selected}} disabled>{{placeholder}}</option>
+    <option value="" selected={{not selected}} disabled={{not allowClear}}>{{placeholder}}</option>
     {{#if labelPath}}
 
       {{#each options as |opt index|}}
